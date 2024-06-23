@@ -7,7 +7,6 @@
 
 .image-box {
   width: 45%;
-  height: 100%;
   background-image: url('./assets/cafe3.avif');
   background-position: center;
   background-repeat: no-repeat;
@@ -16,18 +15,16 @@
 
 .login-box {
   width: 55%;
-  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .login-box h1 {
-  font-size: 60px;
+  margin-top: 17px;
+  font-size: 50px;
   text-align: center;
   color: var(--text-color);
-  letter-spacing: 5px
-  ;
+  letter-spacing: 5px;
 }
 
 
@@ -35,8 +32,7 @@
   font-size: 15px;
   text-align: center;
   color: var(--text-color);
-  letter-spacing: 3px
-  ;
+  letter-spacing: 3px;
 }
 
 form {
@@ -44,14 +40,14 @@ form {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 15px;
+  margin: auto;
 }
 
 form label {
+  margin-top: 8px;
   color: var(--text-color);
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
-  margin-top: 13px;
 }
 
 .group-box {
@@ -65,7 +61,7 @@ form label {
 .group-box input {
   background-color: transparent;
   margin-top: 3px;
-  padding: 12px;
+  padding: 8px;
   border: none;
   border-bottom: 2px solid #4d4d4d;
   outline: none;
@@ -108,11 +104,11 @@ form label {
 .group-box span {
   margin-top: 2px;
   color: hsl(0, 100%, 75%);
-  
+  font-size: 12px;
 }
 
 .send-button{
-  margin-top: 15px;
+  margin-top: 30px;
   background-color: transparent;
   max-width: 450px;
   padding: 12px;
@@ -132,20 +128,20 @@ form label {
 
 #option-text{
   text-align: center;
-  margin-top: 15px;
+  margin-top: 8px;
   color: rgb(255, 255, 255);
 }
 
 .options{
   max-width: 450px;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 8px;
   display: flex;
   justify-content: space-between;
 }
 
 .options a{
-  padding: 10px;
+  padding: 6px;
   width: 220px;
   background-color: transparent;
   border: 1px solid #4d4d4d;
@@ -170,8 +166,6 @@ form label {
   .login-box {
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
 
   }
 
@@ -201,14 +195,20 @@ form label {
   }
 
   #option-text{
-    margin-top: 5px;
+    margin-top: 12px;
+  }
+
+  .send-button{
+    margin-top: 15px;
+    padding: 10px;
   }
 
   .options{
-    margin-top: 10px;
+    margin-top: 15px;
   }
 
   .options a{
-    padding: 8px;
+    width: 170px;
+    padding: 5px;
   }
 }
