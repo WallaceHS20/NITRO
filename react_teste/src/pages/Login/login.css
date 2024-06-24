@@ -1,13 +1,14 @@
 .container {
-  background-color: rgb(0, 0, 0);
   width: 100%;
   height: 100vh;
+  max-height: 100vh;
   display: flex;
 }
 
 .image-box {
   width: 45%;
-  background-image: url('./assets/cafe3.avif');
+  height: 100%;
+  background-image: url('../../assets/cafe3.avif');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,10 +18,11 @@
   width: 55%;
   display: flex;
   flex-direction: column;
+  max-height: 100vh;
+  padding: 1% 0px;
 }
 
 .login-box h1 {
-  margin-top: 17px;
   font-size: 50px;
   text-align: center;
   color: var(--text-color);
@@ -33,9 +35,10 @@
   text-align: center;
   color: var(--text-color);
   letter-spacing: 3px;
+  margin-bottom: 10px;
 }
 
-form {
+.form-login {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +46,7 @@ form {
   margin: auto;
 }
 
-form label {
+.form-login label {
   margin-top: 8px;
   color: var(--text-color);
   font-size: 15px;
@@ -61,7 +64,7 @@ form label {
 .group-box input {
   background-color: transparent;
   margin-top: 3px;
-  padding: 8px;
+  padding: 5px;
   border: none;
   border-bottom: 2px solid #4d4d4d;
   outline: none;
@@ -71,24 +74,24 @@ form label {
 }
 
 .group-box input:focus {
-  background-color: transparent; 
+  background-color: transparent;
 }
 
-.group-box .Passwords{
+.group-box .Passwords {
   display: flex;
   width: 100%;
 }
 
-.group-box .Passwords input{
+.group-box .Passwords input {
   width: 100%;
 }
 
-#button-error{
+#button-error {
   border-bottom: 2px solid #ff5d5d;
   color: hsl(0, 100%, 75%);
 }
 
-.group-box .Passwords button{
+.group-box .Passwords button {
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #4d4d4d;
@@ -107,11 +110,11 @@ form label {
   font-size: 12px;
 }
 
-.send-button{
-  margin-top: 30px;
+.send-button {
+  margin-top: 15px;
   background-color: transparent;
   max-width: 450px;
-  padding: 12px;
+  padding: 8px;
   border: 1px solid #4d4d4d;
   color: var(--text-color);
   border-radius: 10px;
@@ -121,27 +124,29 @@ form label {
   font-weight: bold;
 }
 
-.send-button:hover{
+.send-button:hover {
   background-color: rgb(216, 216, 216);
   color: #000000;
 }
 
-#option-text{
+#option-text {
   text-align: center;
   margin-top: 8px;
   color: rgb(255, 255, 255);
 }
 
-.options{
+.options {
+
   width: 100%;
+  max-width: 450px;
   margin-top: 8px;
   display: flex;
   justify-content: space-between;
 }
 
-.options a{
+.options a {
   padding: 6px;
-  width: 220px;
+  width: 49%;
   background-color: transparent;
   border: 1px solid #4d4d4d;
   display: flex;
@@ -152,12 +157,12 @@ form label {
   color: var(--text-color);
 }
 
-.options a:hover{
+.options a:hover {
   background-color: #FFFF;
   color: #103fc2;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
   .image-box {
     display: none;
   }
@@ -168,45 +173,45 @@ form label {
 
   }
 
-  .login-box h1{
+  .login-box h1 {
     font-size: 30px;
   }
 
-  .login-box h5{
+  .login-box h5 {
     font-size: 13px;
   }
 
-  form{
+  .form-login {
     width: 100%;
     padding: 15px;
   }
 
-  form label{
+  .form-login label {
     margin-top: 7px;
   }
 
-  .group-box{
+  .group-box {
     width: 100%;
   }
 
-  .group-box input{
+  .group-box input {
     padding: 6px;
   }
 
-  #option-text{
+  #option-text {
     margin-top: 12px;
   }
 
-  .send-button{
+  .send-button {
     margin-top: 15px;
     padding: 10px;
   }
 
-  .options{
+  .options {
     margin-top: 15px;
   }
 
-  .options a{
+  .options a {
     width: 49%;
     padding: 5px;
   }
