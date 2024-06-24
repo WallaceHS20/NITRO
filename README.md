@@ -41,15 +41,6 @@ cd .\react_teste\
 npm install
 ~~~~
 
-## Inicie JSON Server
-~~~~docker
-docker build --tag 'backend_teste_tecnico' .
-~~~~
-
-~~~~docker
-docker run -p 8080:8080 backend_teste_tecnico
-~~~~
-
 ### Inicie o App
 ~~~node
 npm run dev
@@ -58,4 +49,20 @@ npm run dev
 ### Acesse pelo seu navegador
 ~~~node
 http://localhost:5173/
+~~~~
+
+## Inicie o docker
+
+#### Abra uma nova aba de seu terminal
+
+~~~~cmd
+cd .\backend\
+~~~~
+
+~~~~docker
+docker build --tag 'backend_teste_tecnico' .
+~~~~
+
+~~~~docker
+docker run -p 8080:8080 backend_teste_tecnico
 ~~~~
