@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+    --text-color: #e7e7e7;
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* Estilos para input preenchido automaticamente (somente para WebKit) */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px black inset;
+  -webkit-text-fill-color: white;
+}
+
+/* Estilos para input preenchido automaticamente (para todos os navegadores compatíveis) */
+input:autofill {
+  box-shadow: 0 0 0px 1000px black inset;
+  -webkit-text-fill-color: white;
+  -moz-text-fill-color: white;
+  -ms-text-fill-color: white;
+}
+
+
+.container {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.image-box {
+  width: 45%;
+  background-image: url('./assets/cafe3.avif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-box {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-box h1 {
+  margin-top: 17px;
+  font-size: 50px;
+  text-align: center;
+  color: var(--text-color);
+  letter-spacing: 5px;
+}
+
+
+.login-box h5 {
+  font-size: 15px;
+  text-align: center;
+  color: var(--text-color);
+  letter-spacing: 3px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+form label {
+  margin-top: 8px;
+  color: var(--text-color);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.group-box {
+  width: 450px;
+  justify-content: center;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+.group-box input {
+  background-color: transparent;
+  margin-top: 3px;
+  padding: 8px;
+  border: none;
+  border-bottom: 2px solid #4d4d4d;
+  outline: none;
+  color: #FFFF;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.group-box input:focus {
+  background-color: transparent; 
+}
+
+.group-box .Passwords{
+  display: flex;
+  width: 100%;
+}
+
+.group-box .Passwords input{
+  width: 100%;
+}
+
+#toggle-password{
+  border-bottom: 2px solid #ff5d5d;
+  color: hsl(0, 100%, 75%);
+}
+
+
+
+.group-box .Passwords button{
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #4d4d4d;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.group-box .input-error {
+  border-bottom: 2px solid #ff5d5d;
+  color: hsl(0, 100%, 75%);
+}
+
+.group-box span {
+  margin-top: 2px;
+  color: hsl(0, 100%, 75%);
+  font-size: 12px;
+}
+
+.send-button{
+  margin-top: 30px;
+  background-color: transparent;
+  max-width: 450px;
+  padding: 12px;
+  border: 1px solid #4d4d4d;
+  color: var(--text-color);
+  border-radius: 10px;
+  font-size: 17px;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  font-weight: bold;
+}
+
+.send-button:hover{
+  background-color: rgb(216, 216, 216);
+  color: #000000;
+}
+
+#option-text{
+  text-align: center;
+  margin-top: 8px;
+  color: rgb(255, 255, 255);
+}
+
+.options{
+  width: 100%;
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.options a{
+  text-decoration: none;
+  padding: 17px;
+  width: 220px;
+  background-color: transparent;
+  border: 1px solid #4d4d4d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: all ease-in 0.3s;
+  color: #ffffff;
+}
+
+.options #google:hover{
+  background-color: #FFFF;
+  color: #dd4f0d;
+}
+
+.options #facebook:hover{
+  background-color: #FFFF;
+  color: #074eac;
+}
+
+@media screen and (max-width: 1000px){
+  .image-box {
+    display: none;
+  }
+
+  .login-box {
+    width: 100%;
+    display: flex;
+
+  }
+
+  .login-box h1{
+    font-size: 30px;
+  }
+
+  .login-box h5{
+    font-size: 13px;
+  }
+
+  form{
+    width: 100%;
+    padding: 15px;
+  }
+
+  form label{
+    margin-top: 7px;
+  }
+
+  .group-box{
+    width: 100%;
+  }
+
+  .group-box input{
+    padding: 6px;
+  }
+
+  #option-text{
+    margin-top: 12px;
+  }
+
+  .send-button{
+    margin-top: 15px;
+    padding: 10px;
+  }
+
+  .options{
+    margin-top: 15px;
+  }
+
+  .options a{
+    width: 49%;
+    padding: 18px;
+  }
+}
