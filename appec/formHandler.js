@@ -44,6 +44,7 @@ export function setupFormHandlers() {
                     duration: 3000
 
                 }).showToast();
+                window.location.href = "./pages/Home/home.html";
             })
             .catch(error => {
                 let msg = ''

@@ -22,13 +22,11 @@ button{
     cursor: pointer;
 }
 
-/* Estilos para input preenchido automaticamente (somente para WebKit) */
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px black inset;
   -webkit-text-fill-color: white;
 }
 
-/* Estilos para input preenchido automaticamente (para todos os navegadores compatíveis) */
 input:autofill {
   box-shadow: 0 0 0px 1000px black inset;
   -webkit-text-fill-color: white;
@@ -59,7 +57,7 @@ input:autofill {
 }
 
 .login-box h1 {
-  margin-top: 17px;
+  margin-top: 1%;
   font-size: 50px;
   text-align: center;
   color: var(--text-color);
@@ -149,10 +147,10 @@ form label {
 }
 
 .send-button{
-  margin-top: 30px;
+  margin-top: 20px;
   background-color: transparent;
   max-width: 450px;
-  padding: 12px;
+  padding: 8px;
   border: 1px solid #4d4d4d;
   color: var(--text-color);
   border-radius: 10px;
@@ -182,7 +180,7 @@ form label {
 
 .options a{
   text-decoration: none;
-  padding: 17px;
+  padding: 15px;
   width: 220px;
   background-color: transparent;
   border: 1px solid #4d4d4d;
