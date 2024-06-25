@@ -21,7 +21,7 @@ Aplicação de validação de formulário utilizando Typescript, React, React-Ho
 
 ## Resultado
 
-https://github.com/WallaceHS20/teste-desenvolvedor-frontend/assets/101594950/a22d8b1a-613b-452f-87f0-af6110d68178
+https://github.com/WallaceHS20/NITRO/assets/101594950/8ecc8df8-ca69-4ca1-981c-1a8c0613dde1
 
 ## Instalação
 
