@@ -18,7 +18,7 @@ Aplicação de validação de formulário utilizando Javascript e Vanilla Js.
 
 ## Resultado
 
-https://github.com/WallaceHS20/teste-desenvolvedor-frontend/assets/101594950/a22d8b1a-613b-452f-87f0-af6110d68178
+https://github.com/WallaceHS20/NITRO/assets/101594950/618585ec-8283-444b-a7f6-0326882933e2
 
 ## Instalação
 
